@@ -5,9 +5,9 @@ import { supabase } from "@/integrations/supabase/client";
 export const Route = createFileRoute("/reset-password")({
   head: () => ({
     meta: [
-      { title: "Set a new password — Hello Membership" },
+      { title: "Set a new password — GD Node Hosting Example by Costa D" },
       { name: "description", content: "Choose a new password for your account." },
-      { property: "og:title", content: "Set a new password — Hello Membership" },
+      { property: "og:title", content: "Set a new password — GD Node Hosting Example by Costa D" },
       { property: "og:description", content: "Choose a new password for your account." },
     ],
   }),

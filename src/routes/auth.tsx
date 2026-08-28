@@ -5,10 +5,10 @@ import { supabase } from "@/integrations/supabase/client";
 export const Route = createFileRoute("/auth")({
   head: () => ({
     meta: [
-      { title: "Sign in or create an account — Hello Membership" },
-      { name: "description", content: "Sign in or create a free account to access the membership area." },
-      { property: "og:title", content: "Sign in or create an account — Hello Membership" },
-      { property: "og:description", content: "Sign in or create a free account to access the membership area." },
+      { title: "Sign in or create an account — GD Node Hosting Example by Costa D" },
+      { name: "description", content: "Sign in or create a free account to access your hosting dashboard." },
+      { property: "og:title", content: "Sign in or create an account — GD Node Hosting Example by Costa D" },
+      { property: "og:description", content: "Sign in or create a free account to access your hosting dashboard." },
     ],
   }),
   component: AuthPage,
@@ -83,8 +83,8 @@ function AuthPage() {
             </h1>
             <p className="mt-1 text-sm text-muted-foreground">
               {mode === "login"
-                ? "Sign in to access your membership area."
-                : "Sign up to get your own membership page."}
+                ? "Sign in to access your hosting dashboard."
+                : "Sign up to get your own hosting dashboard."}
             </p>
 
             <div className="mt-6 grid grid-cols-2 rounded-lg bg-secondary p-1 text-sm font-medium">
