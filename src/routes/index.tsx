@@ -35,8 +35,8 @@ function Index() {
           GD Node Hosting
         </h1>
         <p className="mx-auto mt-6 max-w-md text-lg leading-relaxed text-muted-foreground">
-          A simple example hosting dashboard by Costa D. Create an account to access your private
-          node-hosting overview.
+          A node hosting example dashboard by Costa D. 
+          You can use the GitHub or ZIP to test your Node Hosting
         </p>
         <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
           {signedIn ? (
