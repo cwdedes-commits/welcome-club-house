@@ -44,8 +44,8 @@ function AuthPage() {
         });
         if (error) throw error;
         if (!data.session) {
-          setSignedUp(true);
-          return;
+          const { error: signInError } = await supabase.auth.signInWithPassword({ email, password });
+          if (signInError) throw signInError;
         }
       } else {
         const { error } = await supabase.auth.signInWithPassword({ email, password });
