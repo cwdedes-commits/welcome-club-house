@@ -76,24 +76,7 @@ function AuthPage() {
   return (
     <main className="flex min-h-[calc(100vh-4rem)] items-center justify-center px-4 py-12">
       <div className="w-full max-w-md rounded-2xl border border-border bg-card p-8 shadow-sm">
-        {signedUp ? (
-          <div className="text-center">
-            <h1 className="font-display text-2xl font-semibold">Check your email</h1>
-            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-              We sent a confirmation link to <span className="font-medium text-foreground">{email}</span>.
-              Click it to activate your account, then come back and sign in.
-            </p>
-            <button
-              onClick={() => {
-                setSignedUp(false);
-                setMode("login");
-              }}
-              className="mt-6 inline-flex w-full items-center justify-center rounded-lg bg-primary px-4 py-2.5 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
-            >
-              Back to sign in
-            </button>
-          </div>
-        ) : (
+        {(
           <>
             <h1 className="font-display text-2xl font-semibold">
               {mode === "login" ? "Welcome back" : "Create your account"}
