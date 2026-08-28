@@ -29,7 +29,7 @@ export function Header() {
     <header className="sticky top-0 z-10 border-b border-border bg-background/80 backdrop-blur">
       <div className="mx-auto flex h-16 w-full max-w-5xl items-center justify-between px-6">
         <Link to="/" className="font-display text-lg font-semibold tracking-tight">
-          Hello<span className="text-primary">Membership</span>
+          GD<span className="text-primary">Node</span>
         </Link>
         <nav className="flex items-center gap-3">
           {signedIn ? (
@@ -38,7 +38,7 @@ export function Header() {
                 to="/members"
                 className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
               >
-                Membership area
+                Dashboard
               </Link>
               <button
                 onClick={handleSignOut}

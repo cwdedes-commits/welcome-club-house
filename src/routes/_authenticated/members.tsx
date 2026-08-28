@@ -5,10 +5,10 @@ import { supabase } from "@/integrations/supabase/client";
 export const Route = createFileRoute("/_authenticated/members")({
   head: () => ({
     meta: [
-      { title: "Membership Area — Hello Membership" },
-      { name: "description", content: "Your private membership area with exclusive content." },
-      { property: "og:title", content: "Membership Area — Hello Membership" },
-      { property: "og:description", content: "Your private membership area with exclusive content." },
+      { title: "Hosting Dashboard — GD Node Hosting Example by Costa D" },
+      { name: "description", content: "Your private hosting dashboard with example content." },
+      { property: "og:title", content: "Hosting Dashboard — GD Node Hosting Example by Costa D" },
+      { property: "og:description", content: "Your private hosting dashboard with example content." },
     ],
   }),
   component: MembersPage,
@@ -17,7 +17,7 @@ export const Route = createFileRoute("/_authenticated/members")({
 const exampleContent = [
   {
     title: "Getting started",
-    body: "This is your default membership page — you can modify this as needed. Replace these cards with your own exclusive content, downloads, or videos.",
+    body: "This is your default hosting dashboard — you can modify this as needed. Replace these cards with your own node stats, plans, or support links.",
   },
   {
     title: "Member resource #1",
@@ -57,12 +57,12 @@ function MembersPage() {
 
   return (
     <main className="mx-auto w-full max-w-3xl px-6 py-16">
-      <p className="text-sm font-medium tracking-wide text-muted-foreground uppercase">Members only</p>
+      <p className="text-sm font-medium tracking-wide text-muted-foreground uppercase">Dashboard</p>
       <h1 className="mt-2 font-display text-4xl font-semibold tracking-tight">
         Welcome, {displayName}!
       </h1>
       <p className="mt-3 text-lg text-muted-foreground">
-        You're signed in. This is your default membership page — you can modify this as needed.
+        You're signed in. This is your default hosting dashboard — you can modify this as needed.
       </p>
 
       <section className="mt-10 grid gap-4 sm:grid-cols-2">
