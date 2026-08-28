@@ -25,7 +25,7 @@ function AuthPage() {
   const [error, setError] = useState<string | null>(null);
   const [notice, setNotice] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
-  const [signedUp, setSignedUp] = useState(false);
+  
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
