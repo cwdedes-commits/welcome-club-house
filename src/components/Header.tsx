@@ -29,7 +29,7 @@ export function Header() {
     <header className="sticky top-0 z-10 border-b border-border bg-background/80 backdrop-blur">
       <div className="mx-auto flex h-16 w-full max-w-5xl items-center justify-between px-6">
         <Link to="/" className="font-display text-lg font-semibold tracking-tight">
-          GD<span className="text-primary">Node</span>
+          GD Node Example
         </Link>
         <nav className="flex items-center gap-3">
           {signedIn ? (
