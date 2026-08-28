@@ -2,17 +2,6 @@
 
 build a simple "hello world" type application that includes a simple hello welcome page and a simple login page with user sign up that takes them to a unique membership area with example content, like this is a default membership page, you can modify this as needed
 
-This project was built with [Lovable](https://lovable.dev).
-
-**Live app**: https://welcome-club-house.lovable.app
-
-## Build with Lovable
-
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/573d2742-cb0f-49db-806d-d4f9cc7f201a).
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
 
 ## Development
 
